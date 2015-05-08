@@ -1,0 +1,113 @@
+/* Space out content a bit */
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+	.container {
+		max-width: 730px;
+	}
+}
+.container-narrow > hr {
+	margin: 130px 0;
+}
+
+.lead {
+	text-align: center;
+}
+
+.lead h1 {
+	padding-bottom: 15px;
+}
+
+.lead p {
+	margin: 20px 30px;
+	font-size: 17px !important;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+	/* Remove the padding we set earlier */
+	.header,
+	.footer {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 30px;
+	}
+}
+
+h1 {
+	font-weight: 200;
+}
+
+h3 {
+	font-weight: 300;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 27px;
+}
+
+div.info {
+	margin: 40px 20px;
+}
+
+div.info ul {
+	padding-left: 20px;
+	list-style: none;
+}
+
+div.info li {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+div.info .row {
+	margin-bottom: 15px;
+}
+
+div.info .row .time {
+	font-weight: 300;
+}
+
+div.info .row strong {
+	font-weight: 600;
+}
+
+div.contact p {
+	font-size: 18px;
+	font-weight: 300;
+}
+
