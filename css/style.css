@@ -99,7 +99,7 @@ div.info li {
 }
 
 div.info .programme {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 div.info .row {
@@ -138,5 +138,9 @@ div.contact {
 div.contact p {
 	font-size: 18px;
 	font-weight: 300;
+}
+
+div.flyer {
+	margin-bottom: 25px;
 }
 
