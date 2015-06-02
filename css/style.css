@@ -51,7 +51,7 @@ body {
 
 .lead p {
 	margin: 20px 30px;
-	font-size: 17px !important;
+	font-size: 15px !important;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -98,15 +98,28 @@ div.info li {
 	font-weight: 400;
 }
 
-div.info .who {
-	margin-bottom: 20px;
+div.info .programme {
+	margin-bottom: 30px;
 }
 
 div.info .row {
 	margin-bottom: 15px;
 }
 
-div.info .row .time {
+.programme h4 {
+	margin-bottom: 20px;
+}
+
+.programme .time {
+	font-weight: 300;
+}
+
+.programme .arrow {
+	text-align: right;
+}
+
+.programme .detail {
+	font-size: 13px;
 	font-weight: 300;
 }
 
