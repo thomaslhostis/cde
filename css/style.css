@@ -51,6 +51,8 @@ body {
 
 .lead img {
 	opacity: 0.9;
+	max-width: 100%;
+	height: auto;
 }
 
 .lead p {
