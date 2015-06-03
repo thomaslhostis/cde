@@ -46,7 +46,11 @@ body {
 }
 
 .lead h1 {
-	padding-bottom: 15px;
+	padding-bottom: 0;
+}
+
+.lead img {
+	opacity: 0.9;
 }
 
 .lead p {
