@@ -150,3 +150,7 @@ div.flyer {
 	margin-bottom: 25px;
 }
 
+
+.ekko-lightbox-nav-overlay a {
+	outline: medium none !important;
+}

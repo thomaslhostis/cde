@@ -15,6 +15,8 @@
 	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<!--Lightbox-->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.css">
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -44,8 +46,12 @@
 		<p class="lead smaller"><small>D'ici là, n'hésitez pas à nous faire part de vos questions et vos attentes...</small><br>Bon business à tous !</p>
 		<p><a class="btn btn-lg btn-success" href="mailto:deveco@bazemont.fr" title="Envoyer un courriel à l'adresse : deveco@bazemont.fr" role="button">Nous contacter</a></p>
 		<div class="box">
-			<img src="images/soiree-deveco-2.min.jpg" class="img-responsive" alt="Photo de l'équipe">
-			<img src="images/soiree-deveco-1.min.jpg" class="img-responsive" alt="Photo du work dating">
+			<a href="images/soiree-deveco-2.jpg" title="Agrandir la photo" alt="Photo de l'équipe" data-toggle="lightbox" data-gallery="galerie" data-title="Membres de la Commission Développement Économique">
+				<img src="images/soiree-deveco-2.min.jpg" class="img-responsive" alt="Photo de l'équipe">
+			</a>
+			<a href="images/soiree-deveco-1.jpg" title="Agrandir la photo" alt="Photo du work dating" data-toggle="lightbox" data-gallery="galerie" data-title="Notre session Work Dating">
+				<img src="images/soiree-deveco-1.min.jpg" class="img-responsive" alt="Photo du Work Dating">
+			</a>
 		</div>
 	</div>
 
@@ -126,5 +132,27 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--Lightbox-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/3.3.0/ekko-lightbox.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function ($) {
+		// delegate calls to data-toggle="lightbox"
+		$(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+			event.preventDefault();
+			return $(this).ekkoLightbox({
+				onShown: function() {
+					if (window.console) {
+						return console.log('Checking our the events huh?');
+					}
+				},
+				onNavigate: function(direction, itemIndex) {
+					if (window.console) {
+						return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+					}
+				}
+			});
+		});
+	});
+</script>
 </body>
 </html>
